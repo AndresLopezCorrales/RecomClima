@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <link href="../output.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Flamenco:wght@300;400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header w-full h-auto bg-blue-700 shadow-md text-slate-200">
+        <nav class="main-nav flex flex-col md:flex-row md:justify-evenly items-center justify-evenly gap-4 p-4">
+            <a href="../index.html"><img class="logo-link mx-auto mb-4 w-28 h-28" src="../img/icon.png"
+                    alt="logo RecomClima"></a>
+            <a href="../index.html" class="flex flex-col text-center">
+                <span class="text-lg">Inicio</span></a>
+            <a href="../views/favorites_city.html" class="flex flex-col text-center"><img
+                    class="logo-favoritos mx-auto mb-2 w-20 h-20 animate-pulse" src="../img/ic_filled_heart.png"
+                    alt="icono de corazón lleno">
+                <span class="text-lg">Favoritos</span></a>
+            <a href="../views/search_city.html" class="flex flex-col text-center"><img
+                    class="logo-login mx-auto mb-2 w-20 h-20" src="../img/ic_search.png" alt="icono de buscar">
+                <span class="text-lg">Buscar</span></a>
+        </nav>
+    </header>
+
+    <section id="favoritos" class="section favoritos-section flex flex-col items-center">
+        <h1 class="section-title text-3xl md:text-4xl font-semibold text-center my-8">Tus Ciudades Favoritas</h1>
+
+        <div id="lista-favoritos"
+            class="favoritos-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Ciudades Favoritas se verán aquí -->
+        </div>
+
+    </section>
+
+    <script type="module" src="../js/UI/favorites.js"></script>
+
+</body>
+
+</html>
